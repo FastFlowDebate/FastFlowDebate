@@ -1,0 +1,23 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  overflow: auto;
+  position: relative;
+  background-image: url("../graphics/footer_lodyas.png");
+  height: 100%;
+
+}
+#icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 35%;
+  margin: auto;
+}
