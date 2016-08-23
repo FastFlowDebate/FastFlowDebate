@@ -1,0 +1,25 @@
+{
+  "name": "fastflowdebate.github.io",
+  "version": "0.0.2",
+  "description": "Fastflow's offical website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FastFlowDebate/fastflowdebate.github.io.git"
+  },
+  "keywords": [
+    "debate"
+  ],
+  "author": "Adam Towers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FastFlowDebate/fastflowdebate.github.io/issues"
+  },
+  "homepage": "https://github.com/FastFlowDebate/fastflowdebate.github.io#readme",
+  "dependencies": {
+    "onepage-scroll": "^1.3.0"
+  }
+}
