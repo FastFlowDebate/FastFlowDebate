@@ -18,4 +18,25 @@ $(document).ready(function() {
   $("#down").click(function() {
     $(".main").moveDown();
   });
+
+  $(".brand-logo").click(function() {
+    $(".main").moveTo(1);
+  });
+
+  $("#featuresLink").click(function() {
+    $(".main").moveTo(3);
+  });
+  $("#aboutLink").click(function() {
+    $(".main").moveTo(2);
+  });
+  $("#downloadsLink").click(function() {
+    $(".main").moveTo(4);
+  });
+  $("#teamLink").click(function() {
+    $(".main").moveTo(5);
+  });
+});
+
+$(window).on('load', function() {
+  //$('#featureRow').jScrollPane();
 });

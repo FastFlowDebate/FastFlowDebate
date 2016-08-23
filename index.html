@@ -7,10 +7,11 @@
 	<title>FastFlow</title>
 	<meta name="description" content="The official website for FastFlow">
 	<meta name="author" content="Adam Towers">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/web.css">
-  <link rel="stylesheet" href="node_modules/onepage-scroll/onepage-scroll.css">
+	<link rel="stylesheet" href="node_modules/onepage-scroll/onepage-scroll.css">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
@@ -19,34 +20,65 @@
 		<div class="nav-wrapper purple">
 			<a href="#" class="brand-logo"><img class="valign" src="graphics/FastFlowIcon.png"></a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="#2">About</a></li>
-				<li><a href="#3">Downloads</a></li>
-				<li><a href="#4">Team</a></li>
+				<li><a id="aboutLink" href="#2">About</a></li>
+				<li><a id="featuresLink" href="#3">Features</a></li>
+				<li><a id="downloadsLink" href="#4">Downloads</a></li>
+				<li><a id="teamLink" href="#5">Team</a></li>
 			</ul>
 		</div>
 	</nav>
 	<div class="main">
 		<section>
-      <div id="iconRow" class="row valign-wrapper">
-        <img id="bigIcon" class="valign" src="graphics/FastFlowIcon.png">
-      </div>
-      <div id="title" class="center-align">Fast Flow</div>
-      <a id="down"><img class="center-align" src="graphics/down.png"></a>
+			<div id="iconRow" class="row valign-wrapper">
+				<img id="bigIcon" class="valign" src="graphics/FastFlowIcon.png">
+			</div>
+			<div id="title" class="center-align">
+				<h1>Fast Flow</h1></div>
+			<a id="down"><img class="center-align" src="graphics/down.png"></a>
+		</section>
+		<section class="container">
+			<div class="row">
+				<div class="flow-text">
+					<h2>Welcome to FastFlow</h2>
+					<p>FastFlow is a tool to help debaters leverage their research better in round. Debaters put enormous amounts of effort into cutting cards and creating blocks, and Fastflow is designed to make utilizing that preperation easier and more efficient.</p>
+					<p>FastFlow's source code is available on <a href="http://github.com/Fastflowdebate/fastflow">Github</a> so if you have any bugs feel free to submit an issue or pull request.</p>
+				</div>
+			</div>
 		</section>
 		<section>
-			<h1>Welcome to FastFlow</h1><br>
-			<p>FastFlow</p>
+			<div class="container flow-text">
+				<h2>Features</h2>
+				<p>Although a few of FastFlow's features are still in development the Card Management components are finished and ready for use!</p>
+			</div>
+
+			<div id="" class="container">
+	      <h3>Cards<span class="blue notif">Beta</span></h3>
+	      <p>Before FastFlow cards were hidden away in archaic organization systems that pushed Word's formatting as far as it would go, and yet there were still awkward struggles to find evidence in round.</p>
+				<p>FastFlow replaces folder style organization with tag based searching, simply attach tags to cards and search for cards how you want to!</p>
+
+				<h3>Blocks<span class="yellow notif">Planned</span></h3>
+				<p><i>Planned:</i> As you flow inside FastFlow typing a tagline of a contention will automatically query your block file and suggest blocks to autopopulate your flow.</p>
+
+				<h3>Speech<span class="green notif">WIP</span></h3>
+				<p>Whereas Word only offers you a texteditor for writing speeches, FastFlow gives you a tool for presenting speeches.</p>
+				<p>Helping you ensure your speech is to time with smart time indicators, and with links that make sure any file you reference is only one click away.</p>
+		</div>
 		</section>
-    <section>
-			Downloads
+		<section class="container flow-text">
+			<h2>Downloads</h2>
+			<p>At the moment FastFlow binaries (compiled applications) are not available, though they will be coming soon(TM). Feel free to clone the <a href="http://github.com/fastflowdebate">Github Repository</a> and build it for your self.</p>
 		</section>
-    <section>
-			Team
+		<section class="container flow-text">
+			<h2>Team</h2>
+			<p>FastFlow is built by Adam Towers and Isaac Lo!<p>
 		</section>
 	</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <script src="node_modules/onepage-scroll/jquery.onepage-scroll.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/jquery.jscrollpane.min.js"></script>
+
 <script src="index.js"></script>
 
 </html>
