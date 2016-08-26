@@ -30,15 +30,16 @@
 	<div class="main">
 		<section>
 			<div id="iconRow" class="row valign-wrapper">
-				<img id="bigIcon" class="valign" src="graphics/FastFlowIcon.png">
+				<img id="bigIcon" class=" valign" src="graphics/FastFlowIcon.png">
 			</div>
 			<div id="title" class="center-align">
-				<h1>Fast Flow</h1></div>
+				<h1>Fast Flow</h1>
+			</div>
 			<a id="down"><img class="center-align" src="graphics/down.png"></a>
 		</section>
 		<section class="container">
 			<div class="row">
-				<div class="flow-text">
+				<div class="flow-text container">
 					<h2>Welcome to FastFlow</h2>
 					<p>FastFlow is a tool to help debaters leverage their research better in round. Debaters put enormous amounts of effort into cutting cards and creating blocks, and Fastflow is designed to make utilizing that preperation easier and more efficient.</p>
 					<p>FastFlow's source code is available on <a href="http://github.com/Fastflowdebate/fastflow">Github</a> so if you have any bugs feel free to submit an issue or pull request.</p>
@@ -48,31 +49,68 @@
 		<section>
 			<div class="container flow-text">
 				<h2>Features</h2>
-				<p>Although a few of FastFlow's features are still in development the Card Management components are finished and ready for use!</p>
 			</div>
 
-			<div id="" class="container">
-	      <h3>Cards<span class="blue notif">Beta</span></h3>
-	      <p>Before FastFlow cards were hidden away in archaic organization systems that pushed Word's formatting as far as it would go, and yet there were still awkward struggles to find evidence in round.</p>
-				<p>FastFlow replaces folder style organization with tag based searching, simply attach tags to cards and search for cards how you want to!</p>
-
-				<h3>Blocks<span class="yellow notif">Planned</span></h3>
-				<p><i>Planned:</i> As you flow inside FastFlow typing a tagline of a contention will automatically query your block file and suggest blocks to autopopulate your flow.</p>
-
-				<h3>Speech<span class="green notif">WIP</span></h3>
-				<p>Whereas Word only offers you a texteditor for writing speeches, FastFlow gives you a tool for presenting speeches.</p>
-				<p>Helping you ensure your speech is to time with smart time indicators, and with links that make sure any file you reference is only one click away.</p>
-		</div>
+			<div id="" class="container flow-text">
+				<div class="row">
+					<div class="featurePanel card-panel col l5 m8">
+						<h3>Cards<span class="blue notif">Beta</span></h3>
+						<p>FastFlow replaces folder style organization with tag based searching, simply attach tags to cards and search for cards how you want to!</p>
+					</div>
+					<div class="featurePanel card-panel col l5 m8 offset-l1">
+						<h3>Speech<span class="green notif">WIP</span></h3>
+						<p>Whereas Word only offers you a texteditor for writing speeches, FastFlow gives you a tool for presenting speeches.</p>
+						<p>Helping you ensure your speech is to time with smart time indicators, and with links that make sure any file you reference is only one click away.</p>
+					</div>
+				</div>
+			</div>
 		</section>
-		<section class="container flow-text">
+		<section id="downloads" class="container flow-text">
 			<h2>Downloads</h2>
-			<p>At the moment FastFlow binaries (compiled applications) are not available, though they will be coming soon(TM). Feel free to clone the <a href="http://github.com/fastflowdebate">Github Repository</a> and build it for your self.</p>
+			<p>At the moment FastFlow binaries are not available as we are still figuring out some kinks in the system (auto-updating for one), though they will be coming soon(TM). If you're feeling adventuorous Feel free to clone the <a href="http://github.com/fastflowdebate">Github Repository</a> and build it for your self, and report bugs while you're at it.</p>
 		</section>
-		<section class="container flow-text">
+		<section class="container">
 			<h2>Team</h2>
-			<p>FastFlow is built by Adam Towers and Isaac Lo!</p>
+			<div id="teamCardContainer" class="container">
+				<div class="card teamCard">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="graphics/adam.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Adam<i class="material-icons right">more_vert</i></span>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">Adam Towers<i class="material-icons right">close</i></span>
+						<p>Adam is a Public Forum debater who hates when he can't find a card he knows he cut, and this project is his overkill attempt to solve that problem. He is also the founder of FastFlow</p>
+					</div>
+				</div>
+				<div class="card teamCard">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="graphics/isaac.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Isaac<i class="material-icons right">more_vert</i></span>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">Isaac Lo<i class="material-icons right">close</i></span>
+						<p>Isaac is the Chief Meme Lord (guy in charge of Congress at Leland) and has been with FastFlow since almost its inception, constantly telling Adam what does and does not look good.</p>
+					</div>
+				</div>
+				<div class="card teamCard">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="graphics/pranav.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Pranav<i class="material-icons right">more_vert</i></span>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">Pranav Seetharaman<i class="material-icons right">close</i></span>
+						<p>Pranav, after a spurt of Policy Debate, is now the head of the Leland Magic Club, and uses his sleight of hand to write the code behind FastFlow's backend.</p>
+					</div>
+				</div>
+			</div>
 		</section>
-	</div>
+		</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <script src="node_modules/onepage-scroll/jquery.onepage-scroll.js"></script>
