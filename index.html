@@ -1,122 +1,340 @@
-<!doctype html>
-
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>FastFlow</title>
-	<meta name="description" content="The official website for FastFlow">
-	<meta name="author" content="Adam Towers">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
-	<link rel="stylesheet" href="css/materialize.min.css">
-	<link rel="stylesheet" href="css/web.css">
-	<link rel="stylesheet" href="node_modules/onepage-scroll/onepage-scroll.css">
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#9c27b0">
+    <title>FastFlow</title>
+
+    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    function removeOverlay() {
+       $('div[id^=sidenav-overlay]').remove();
+    }
+    </script>
 
 </head>
+<body id="top" class="scrollspy">
 
-<body>
-	<nav>
-		<div class="nav-wrapper purple">
-			<a href="#" class="brand-logo"><img class="valign" src="graphics/FastFlowIcon.png"></a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a id="aboutLink" href="#2">About</a></li>
-				<li><a id="featuresLink" href="#3">Features</a></li>
-				<li><a id="downloadsLink" href="#4">Downloads</a></li>
-				<li><a id="teamLink" href="#5">Team</a></li>
-			</ul>
-		</div>
-	</nav>
-	<div class="main">
-		<section>
-			<div id="iconRow" class="row valign-wrapper">
-				<img id="bigIcon" class=" valign" src="graphics/FastFlowIcon.png">
-			</div>
-			<div id="title" class="center-align">
-				<h1>Fast Flow</h1>
-			</div>
-			<a id="down"><img class="center-align" src="graphics/down.png"></a>
-		</section>
-		<section class="container">
-			<div class="row">
-				<div class="flow-text container">
-					<h2>Welcome to FastFlow</h2>
-					<p>FastFlow is a tool to help debaters leverage their research better in round. Debaters put enormous amounts of effort into cutting cards and creating blocks, and Fastflow is designed to make utilizing that preperation easier and more efficient.</p>
-					<p>FastFlow's source code is available on <a href="http://github.com/Fastflowdebate/fastflow">Github</a> so if you have any bugs feel free to submit an issue or pull request.</p>
-				</div>
-			</div>
-		</section>
-		<section>
-			<div class="container flow-text">
-				<h2>Features</h2>
-			</div>
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
 
-			<div id="" class="container flow-text">
-				<div class="row">
-					<div class="featurePanel card-panel col l5 m8">
-						<h3>Cards<span class="blue notif">Beta</span></h3>
-						<p>FastFlow replaces folder style organization with tag based searching, simply attach tags to cards and search for cards how you want to!</p>
-					</div>
-					<div class="featurePanel card-panel col l5 m8 offset-l1">
-						<h3>Speech<span class="green notif">WIP</span></h3>
-						<p>Whereas Word only offers you a texteditor for writing speeches, FastFlow gives you a tool for presenting speeches.</p>
-						<p>Helping you ensure your speech is to time with smart time indicators, and with links that make sure any file you reference is only one click away.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="downloads" class="container flow-text">
-			<h2>Downloads</h2>
-			<p>At the moment FastFlow binaries are not available as we are still figuring out some kinks in the system (auto-updating for one), though they will be coming soon(TM). If you're feeling adventuorous Feel free to clone the <a href="http://github.com/fastflowdebate">Github Repository</a> and build it for your self, and report bugs while you're at it.</p>
-		</section>
-		<section class="container">
-			<h2>Team</h2>
-			<div id="teamCardContainer" class="container">
-				<div class="card teamCard">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="graphics/adam.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Adam<i class="material-icons right">more_vert</i></span>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Adam Towers<i class="material-icons right">close</i></span>
-						<p>Adam is a Public Forum debater who hates when he can't find a card he knows he cut, and this project is his overkill attempt to solve that problem. He is also the founder of FastFlow</p>
-					</div>
-				</div>
-				<div class="card teamCard">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="graphics/isaac.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Isaac<i class="material-icons right">more_vert</i></span>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Isaac Lo<i class="material-icons right">close</i></span>
-						<p>Isaac is the Chief Meme Lord (guy in charge of Congress at Leland) and has been with FastFlow since almost its inception, constantly telling Adam what does and does not look good.</p>
-					</div>
-				</div>
-				<div class="card teamCard">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="graphics/pranav.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Pranav<i class="material-icons right">more_vert</i></span>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Pranav Seetharaman<i class="material-icons right">close</i></span>
-						<p>Pranav, after a spurt of Policy Debate, is now the head of the Leland Magic Club, and uses his sleight of hand to write the code behind FastFlow's backend.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		</div>
-</body>
-<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-<script src="node_modules/onepage-scroll/jquery.onepage-scroll.js"></script>
-<script src="js/materialize.min.js"></script>
-<script src="js/jquery.jscrollpane.min.js"></script>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
 
-<script src="index.js"></script>
+</div>
 
+<!--Navigation-->
+
+<ul id="nav-mobile" class="side-nav">
+    <li><a href="#intro" onclick = "removeOverlay();" class = "subheader black-text showClicks">About</a></li>
+    <li><a href="#work" onclick = "removeOverlay();" class = "subheader black-text showClicks">Images</a></li>
+    <li><a href="#team" onclick = "removeOverlay();" class = "subheader black-text showClicks">Team</a></li>
+    <li><a href="#more" onclick = "removeOverlay();" class = "subheader black-text showClicks">More</a></li>
+    <!--<li><a href="#" target="_blank">Sign up</a></li>-->
+</ul>
+
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!--<a href="#" id="logo-container" class="brand-logo">FastFlow</a>-->
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#intro">About</a></li>
+                    <li><a href="#work">Images</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#more">More</a></li>
+                    <!--<li><a href="#" target="_blank">Sign up</a></li>-->
+                </ul>
+
+            <a href="#" data-activates="nav-mobile" class="button-collapse brand-logo"><i class = "mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Hero-->
+<div class="section no-pad-bot" id="index-banner">
+
+	<div class="container" style = "margin-top: -30px;">
+
+    <h1 class="header light center white-text">FastFlow</h1>
+	<div class = "row center">
+	<img class = "responsive-img" style = "height: 400px; width: 400px;" src = "img/FastFlowIcon.png">
+	</div>
+         <div class="row center">
+           <h5 class="header col s12 light white-text">Software for speedy flow and debate</h5>
+         </div>
+         <div class="row center">
+           <a href="https://github.com/FastFlowDebate/FastFlow/releases" id="download-button" class="btn-large waves-effect waves-light light-blue darken-1 white-text">Download</a>
+         </div>
+         <br><br><br><br>
+
+       </div>
+</div>
+
+<!--Intro and service-->
+<div id="intro" class="section scrollspy">
+
+    <div class="container">
+        <div class="row">
+            <div  class="col s12">
+		<h2 class="center header text_h2"> A tool for <span class="span_h2"> debaters </span> made by <span class="span_h2">debaters</span>.</h2>
+            </div>
+
+            <div  class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-image-flash-on"></i>
+                    <h5 class="promo-caption">Cards</h5>
+                    <p class="light center">FastFlow replaces folder style organization with tag based searching, simply attach tags to cards and search for cards how you want to.</p>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-social-group"></i>
+                    <h5 class="promo-caption">Speech</h5>
+                    <p class="light center">Whereas Word only offers you a texteditor for writing speeches, FastFlow gives you a tool for presenting speeches. Helping you ensure your speech is to time with links that make sure any file you reference is only one click away.</p>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-hardware-desktop-windows"></i>
+                    <h5 class="promo-caption">Flow</h5>
+                    <p class="light center">Fastflow's flowing replaces excel spreadsheets and word templates with an intuitive interface. Quickly add links to your cards and navigate through debate rounds.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Work-->
+<div class="section scrollspy" id="work">
+    <div class="container">
+        <h2 class="header text_b">Images </h2>
+
+        <div class="row">
+          <div class="col s12 m6 14">
+            <div class="card">
+              <div class="card-image">
+                <img class = "materialboxed" data-caption = "Login screen" src="img/screen1.png">
+              </div>
+              <div class="divider"></div>
+              <div class="card-content">
+                Card Manager
+              </div>
+
+            </div>
+          </div>
+          <div class="col s12 m6 14">
+            <div class="card">
+              <div class="card-image">
+                <img class = "materialboxed" data-caption = "Post View screen" src="img/screen2.png">
+              </div>
+              <div class="divider"></div>
+              <div class="card-content">
+                Card Modal
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 14">
+            <div class="card">
+              <div class="card-image">
+                <img class = "materialboxed" data-caption = "Post Editor on text" src="img/screen3.png">
+              </div>
+              <div class="divider"></div>
+              <div class="card-content">
+                Card Editor
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 14">
+            <div class="card">
+              <div class="card-image">
+                <img class = "materialboxed" data-caption = "Commenting and liking" src="img/screen4.png">
+              </div>
+              <div class="divider"></div>
+              <div class="card-content">
+                Card Creator
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 14">
+            <div class="card">
+              <div class="card-image">
+                <img class = "materialboxed" data-caption = "Post Editor on image" src="img/screen5.png">
+              </div>
+              <div class="divider"></div>
+              <div class="card-content">
+                Speech Manager
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 14">
+            <div class="card">
+              <div class="card-image">
+                <img class = "materialboxed" data-caption = "Group View" src="img/screen6.png">
+              </div>
+              <div class="divider"></div>
+              <div class="card-content">
+                Speech Modal
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 14">
+            <div class="card">
+              <div class="card-image">
+                <img class = "materialboxed" data-caption = "Post Editor on image" src="img/screen7.png">
+              </div>
+              <div class="divider"></div>
+              <div class="card-content">
+                Speech Editor
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 14">
+            <div class="card">
+              <div class="card-image">
+                <img class = "materialboxed" data-caption = "Group View" src="img/screen8.png">
+              </div>
+              <div class="divider"></div>
+              <div class="card-content">
+                Flow (WIP)
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+</div>
+
+<!--Parallax-->
+<div class="parallax-container">
+    <div class="parallax"><img src="img/mountains.jpg"></div>
+</div>
+
+<!--Team-->
+<div class="section scrollspy" id="team">
+    <div class="container">
+        <h2 class="header text_b"> Our Team </h2>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card card-avatar">
+			<br>
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="img/adam.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">
+                            Adam Towers <br/>
+                            <small><em><a class="light-blue-text text-darken-1" href="#">Backend & Design</a></em></small></span>
+                        <p>
+                          <a class="light-blue-text text-darken-1" href="https://www.facebook.com/AdamTowers77">
+                              <i class="fa fa-facebook-square"></i>
+                          </a>
+
+                          <a class="light-blue-text text-darken-1" href="https://github.com/Zarkoix">
+                              <i class="fa fa-github"></i>
+                          </a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card card-avatar">
+			<br>
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="img/isaac.JPG">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Isaac Lo <br/>
+                            <small><em><a class="light-blue-text text-darken-1" href="#">Backend & Design</em></small>
+                        </span>
+                        <p>
+                          <a class="light-blue-text text-darken-1" href="https://www.facebook.com/isaaclo123">
+                              <i class="fa fa-facebook-square"></i>
+                          </a>
+
+                          <a class="light-blue-text text-darken-1" href="https://github.com/isaaclo123">
+                              <i class="fa fa-github"></i>
+                          </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card card-avatar">
+			<br>
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="img/pranav.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Pranav Seetharaman <br/>
+                            <small><em><a class="light-blue-text text-darken-1" href="#">Database</a></em></small></span>
+                        <p>
+                            <a class="light-blue-text text-darken-1" href="https://www.facebook.com/profile.php?id=100008456203548">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+
+                            <a class="light-blue-text text-darken-1" href="https://github.com/Blazerp">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<footer id="more" class="page-footer default_color scrollspy">
+
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col s6">
+                <h5 class="white-text">FastFlow</h5>
+                <ul>
+                    <li><a class="white-text" href="http://www.fastflowdebate.com/">Home</a></li>
+                    <li><a class="white-text" href="https://github.com/FastFlowDebate/FastFlow">Repository</a></li>
+                    <li><a class="white-text" href="https://github.com/FastFlowDebate/FastFlow/releases">Releases</a></li>
+                </ul>
+            </div>
+
+            <div class="col s6">
+                <h5 class = "white-text">Product Bio</h5>
+                <p class = "white-text">
+                    FastFlow is an application seeking to help debaters gather evidence easily and flow arguments quickly. Currently, FastFlow is still in development. Visit us at https://github.com/FastFlowDebate for more information on devlopment.
+                </p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div class="footer-copyright">
+        <div class="container white-text">
+            Copyright FastFlow 2016. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+    <!--  Scripts-->
+    <!--<script src="min/plugin-min.js"></script>-->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/modernizr.js"></script>
+
+    </body>
 </html>
